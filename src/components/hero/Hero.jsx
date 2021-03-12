@@ -1,8 +1,15 @@
 import React from 'react';
+import './Hero.css';
 
 function Hero(){
     return(
-        <div>Hero</div>
+        <div className='hero-wrapper'>
+            <div className='hero-image'>
+                <div className='hero-text'>
+                    Hero image text
+                </div>
+            </div>
+        </div>
     );
 };
 

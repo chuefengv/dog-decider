@@ -15,6 +15,9 @@
 }
 
 .hero{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     grid-area: hero;
     border: green solid;
 }

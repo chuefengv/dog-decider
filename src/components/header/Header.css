@@ -1,0 +1,24 @@
+.header-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "github title creator";
+    font-size: 1.35em;
+    padding: 10px;
+}
+
+.header-git{
+    grid-area: github;
+    justify-self: baseline;
+}
+
+.header-title{
+    grid-area: title;
+    justify-self: center;
+
+}
+
+.header-creator{
+    grid-area: creator;
+    justify-self: end;
+
+}

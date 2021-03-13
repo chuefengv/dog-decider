@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "github title creator";
-    font-size: 1.35em;
+    font-size: 1.5em;
     padding: 10px;
 }
 

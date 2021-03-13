@@ -6,7 +6,7 @@ function Hero(){
         <div className='hero-wrapper'>
             <div className='hero-image'>
                 <div className='hero-text'>
-                    Hero image text
+                    Find the right dog for you. 
                 </div>
             </div>
         </div>

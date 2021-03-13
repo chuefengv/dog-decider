@@ -15,9 +15,8 @@
 }
 
 .hero{
-    margin-top: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
     grid-area: hero;
     border: green solid;
 }

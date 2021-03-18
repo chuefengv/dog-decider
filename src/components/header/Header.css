@@ -1,12 +1,39 @@
 .header-nav{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
 }
 
 .logo{
-    margin: .5em;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10px;
 }
 
 .hamburger-menu{
-    margin: 1em;
+    margin: 10px;
+    font-size: 3em;
+    justify-self: flex-end;
+}
+
+.reg-nav{
+    visibility: hidden;
+}
+
+@media (min-width: 550px){
+    .header-nav{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    .ham-nav{
+        display: none;
+    }
+    .reg-nav{
+        visibility: visible ;
+        justify-content: center;
+        justify-self: end;
+    }
+
 }

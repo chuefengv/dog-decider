@@ -1,4 +1,15 @@
 .nav-choices{
     display: flex;
     flex-direction: column;
+    /* border: blue solid; */
+}
+
+.nav-choices > li:hover{
+    color: grey;
+}
+
+.nav-choices > li{
+    margin: 0 auto;
+    font-size: 1.75em;
+    list-style-type: none;
 }

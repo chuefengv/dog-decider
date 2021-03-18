@@ -1,0 +1,15 @@
+.nav-choices-2{
+    display: flex;
+    flex-direction: row;
+    /* border: blue solid; */
+}
+
+.nav-choices-2 > li{
+    list-style-type: none;
+}
+
+.nav-choices-2 > li{
+    font-size: 1.75em;
+    padding-left: 10px;
+    padding-right: 10px;
+}

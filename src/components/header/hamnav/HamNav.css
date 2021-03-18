@@ -1,0 +1,4 @@
+.nav-choices{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,24 +1,12 @@
-.header-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "github title creator";
-    font-size: 1.5em;
-    padding: 10px;
+.header-nav{
+    display: flex;
+    justify-content: space-between;
 }
 
-.header-git{
-    grid-area: github;
-    justify-self: baseline;
+.logo{
+    margin: .5em;
 }
 
-.header-title{
-    grid-area: title;
-    justify-self: center;
-
-}
-
-.header-creator{
-    grid-area: creator;
-    justify-self: end;
-
+.hamburger-menu{
+    margin: 1em;
 }

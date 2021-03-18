@@ -19,10 +19,14 @@
     visibility: hidden;
 }
 
+.title{
+    display: none;
+}
+
 @media (min-width: 550px){
     .header-nav{
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: auto auto 1fr;
     }
     .hamburger-menu{
         display: none;
@@ -32,8 +36,12 @@
     }
     .reg-nav{
         visibility: visible ;
-        justify-content: center;
         justify-self: end;
+    }
+    .title{
+        display: unset;
+        align-self: center;
+        margin-left: 10px;
     }
 
 }

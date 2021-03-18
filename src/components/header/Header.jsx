@@ -17,6 +17,9 @@ function Header(){
                 <div className='logo'>
                     <img src={logo} alt=""></img>
                 </div>
+                <div className='title'>
+                    <h2>Dog Data Decider</h2>
+                </div>
                 <div className='reg-nav'>
                     <RegNav />
                 </div>

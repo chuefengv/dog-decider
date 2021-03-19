@@ -39,7 +39,7 @@
         justify-self: end;
     }
     .title{
-        display: unset;
+        display: initial;
         align-self: center;
         margin-left: 10px;
     }

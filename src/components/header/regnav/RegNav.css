@@ -4,12 +4,13 @@
     /* border: blue solid; */
 }
 
-.nav-choices-2 > li{
-    list-style-type: none;
+.nav-choices-2 > li:hover{
+    color: grey;
 }
 
 .nav-choices-2 > li{
     font-size: 1.5em;
     padding-left: 10px;
     padding-right: 10px;
+    list-style-type: none;
 }

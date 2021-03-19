@@ -1,7 +1,10 @@
+body, html{
+    height: 100%;
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    
     grid-template-areas: 
         "header"
         "hero"
@@ -11,14 +14,17 @@
 
 .header {
     grid-area: header;
-    /* box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2); */
-    border: red solid;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .hero{
-
     grid-area: hero;
-    border: green solid;
+    height: 90vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/dog-hero-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .dogsize{

@@ -30,12 +30,10 @@ body, html{
 .dogsize{
     grid-area: dogsize;
     border: blue solid;
-    height: 100vh;
 
 }
 
 .footer{
     grid-area: footer;
     border: black solid;
-
 }

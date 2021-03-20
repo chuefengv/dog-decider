@@ -1,5 +1,6 @@
 import React from 'react';
 import './DogSize.css'
+import './clip.css'
 import sdog_vector from '../../assets/s-dog.png'
 import mdog_vector from '../../assets/m-dog.png'
 import ldog_vector from '../../assets/l-dog.png'
@@ -17,6 +18,7 @@ function DogSize(){
             <div className='small-dog'>
 
                 <div className='dog'>
+                    <h1>Small</h1>
                     <div className='container'>
                         <div className='container-inner'>
                             <img src={sdog_vector} alt='' className='img img1'></img>
@@ -25,13 +27,15 @@ function DogSize(){
                     </div>
                 </div>
 
+
             </div>
             <div className='medium-dog'>
 
                 <div className='dog'>
+                    <h1>Medium</h1>
                     <div className='container'>
                         <div className='container-inner'>
-                            <img src={mdog_vector} alt='' className='img img1'></img>
+                            <img src={mdog_vector} alt='' className='img img2'></img>
                             <img src={bluebone} alt='' className='circle'></img>
                         </div>
                     </div>
@@ -41,9 +45,10 @@ function DogSize(){
             <div className='large-dog'>
 
                 <div className='dog'>
+                        <h1>Large</h1>
                         <div className='container'>
                             <div className='container-inner'>
-                                <img src={ldog_vector} alt='' className='img img1'></img>
+                                <img src={ldog_vector} alt='' className='img img3'></img>
                                 <img src={redbone} alt='' className='circle'></img>
                             </div>
                         </div>

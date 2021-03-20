@@ -1,0 +1,34 @@
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: 15px 2fr 2fr 2fr 1fr 15px;
+    grid-template-areas:
+        ". mission mission mission mission ."
+        ". mission mission mission mission ."
+        ". social social social social ."
+        ". copyright copyright copyright copyright ." ;
+}
+
+.mission-state{
+    grid-area: mission;
+    text-align: center;
+    border-top: solid red;
+    margin-top: 10px;
+}
+
+.social-links{
+    grid-area: social;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: solid red;
+    border-bottom: solid red;
+    padding: 10px 0 10px 0;
+
+}
+
+.copyright{
+    margin-top: 15px;
+    grid-area: copyright;
+    text-align: center;
+}
+

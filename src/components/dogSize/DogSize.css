@@ -18,6 +18,13 @@
     text-align: center;
 }
 
+.dog-header > p{
+    text-align: center;
+    width: auto;
+    padding: 5px;
+
+}
+
 .dog > h1 {
     margin: 10px 0 5px 0;
     border-bottom: solid red;
@@ -39,7 +46,7 @@
     border: red solid;
 }
 
-@media (min-width: 700px){
+@media (min-width: 1200px){
     .ds-wrapper{
         display: grid;
         grid-template-columns: 15px 1fr 1fr 1fr 15px;

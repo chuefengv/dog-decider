@@ -14,6 +14,7 @@ function DogSize(){
         <div className='ds-wrapper'>
             <div className='dog-header'>
                 <h1>Choose the right size for you!</h1>
+                <p>The first step to being a responsible dog owner begins before you even bring home a dog. Thoughtfully and seriously assess your needs before making a decision, and you'll live long, happy lives together.</p>
             </div>
             <div className='small-dog'>
 

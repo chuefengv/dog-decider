@@ -10,8 +10,10 @@
 
 .dog-header{
     grid-area: dog-header;
-    background-color: navy;
+    background-color: rgb(51, 51, 199);
     color: white;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3);
+
 }
 
 .dog-header > h1{
@@ -21,29 +23,25 @@
 .dog-header > p{
     text-align: center;
     width: auto;
-    padding: 5px;
+    margin: 30px;
 
 }
 
 .dog > h1 {
     margin: 10px 0 5px 0;
-    border-bottom: solid red;
 }
 
 .small-dog{
     padding-top: 15px;
     grid-area: small-dog;
-    border: red solid;
 }
 
 .medium-dog{
     grid-area: medium-dog;
-    border: red solid;
 }
 
 .large-dog{
     grid-area: large-dog;
-    border: red solid;
 }
 
 @media (min-width: 1200px){

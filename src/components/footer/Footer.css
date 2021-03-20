@@ -6,13 +6,16 @@
         ". mission mission mission mission ."
         ". social social social social ."
         ". copyright copyright copyright copyright ." ;
+    background-color: rgb(51, 51, 199);
+    box-shadow: 0 -4px 8px 0 hsla(0, 0%, 0%, 0.3);
+
 }
 
 .mission-state{
     grid-area: mission;
     text-align: center;
-    border-top: solid red;
     margin-top: 10px;
+    color: white;
 }
 
 .social-links{
@@ -20,9 +23,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-top: solid red;
-    border-bottom: solid red;
+    border-top: solid white;
+    border-bottom: solid white;
     padding: 10px 0 10px 0;
+    color: white;
 
 }
 
@@ -30,5 +34,6 @@
     margin-top: 15px;
     grid-area: copyright;
     text-align: center;
+    color: white;
 }
 

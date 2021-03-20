@@ -1,0 +1,50 @@
+.ds-wrapper{
+    display: grid;
+    grid-template-columns: 15px 1fr 1fr 1fr 15px;
+    grid-template-areas: 
+        "dog-header dog-header dog-header dog-header dog-header"
+        ". small-dog small-dog small-dog ."
+        ". medium-dog medium-dog  medium-dog  ."
+        ". large-dog large-dog  large-dog  .";
+}
+
+.dog-header{
+    grid-area: dog-header;
+    background-color: navy;
+    color: white;
+}
+
+.dog-header > h1{
+    text-align: center;
+}
+
+.small-dog{
+    grid-area: small-dog;
+    border: red solid;
+}
+
+.medium-dog{
+    grid-area: medium-dog;
+    border: red solid;
+    
+
+}
+
+.large-dog{
+    grid-area: large-dog;
+    border: red solid;
+    
+
+}
+
+@media (min-width: 700px){
+    .ds-wrapper{
+        display: grid;
+        grid-template-columns: 15px 1fr 1fr 1fr 15px;
+        grid-template-areas: 
+            "dog-header dog-header dog-header dog-header dog-header"
+            ". small-dog medium-dog large-dog ."
+            ". small-dog medium-dog  large-dog  ."
+            ". small-dog medium-dog  large-dog  .";
+    }
+}

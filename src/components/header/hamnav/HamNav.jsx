@@ -6,7 +6,7 @@ function HamNav(){
         <div className='hamnav-wrapper'>
             <ul className='nav-choices'>
                 <a href='/'>Home</a>
-                <a href='#dogsize'>Sizes</a>
+                <a href='/show-dogs'>Breeds</a>
                 <a href='https://github.com/chuefengv/dog-decider'>Github</a>
             </ul>
         </div>

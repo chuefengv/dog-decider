@@ -21,6 +21,11 @@
     text-decoration: underline;
 }
 
+.dog > a {
+    position: relative;
+    z-index: 100;
+}
+
 .dog-header > p{
     text-align: center;
     width: auto;

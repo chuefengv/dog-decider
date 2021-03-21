@@ -6,7 +6,7 @@ function RegNav(){
         <div>
             <ul className='nav-choices-2'>
                 <a href='/'>Home</a>
-                <a href='#dogsize'>Sizes</a>
+                <a href='/show-dogs'>Breeds</a>
                 <a href='https://github.com/chuefengv/dog-decider'>Github</a>
             </ul>
         </div>

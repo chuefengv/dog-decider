@@ -10,7 +10,7 @@
 
 .dog-header{
     grid-area: dog-header;
-    background-color: rgb(51, 51, 199);
+    background-color: #2e519e;
     color: white;
     box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3);
 

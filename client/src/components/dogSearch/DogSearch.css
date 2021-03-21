@@ -1,0 +1,51 @@
+.dog-results{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.dog-cards{
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 350px;
+    min-height: 450px;
+    max-height: auto;
+    box-shadow: 8px 8px 6px -6px #777;
+    background-color: #2e519e;
+    color: whitesmoke;
+    border: solid rgb(219, 219, 219);
+
+}
+
+.dog-cards-picture > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dog-cards-picture{
+    padding: 10px;
+}
+
+.dog-cards-breed{
+    text-align: center;
+    margin: 5px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+
+.dog-cards-desc{
+    margin: 10px 20px 10px 20px
+}
+
+.clamp-lines__button {
+    background: none;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font-weight: bold;
+  }

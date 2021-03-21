@@ -1,7 +1,12 @@
+.hero-wrapper{
+    padding: 10px
+}
+
 .hero-wrapper > p{
     color: white;
     font-size: 1.25em;
     text-align: center;
+    position: relative
 
 }
 
@@ -11,6 +16,15 @@
     text-align: center;
 }
 
-.hero-wrapper{
-    padding: 10px
+
+.chevron-down{
+    position: absolute;
+    bottom: 45px;
+    font-size: 3em;
+    right: 50%;
+    color: white;
+}
+
+.chevron-down:hover{
+    color: grey;
 }

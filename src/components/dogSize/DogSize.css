@@ -1,11 +1,11 @@
 .ds-wrapper{
     display: grid;
-    grid-template-columns: 15px 1fr 1fr 1fr 15px;
+    grid-template-columns:  1fr 1fr 1fr ;
     grid-template-areas: 
-        "dog-header dog-header dog-header dog-header dog-header"
-        ". small-dog small-dog small-dog ."
-        ". medium-dog medium-dog  medium-dog  ."
-        ". large-dog large-dog  large-dog  .";
+        " dog-header dog-header dog-header"
+        " small-dog small-dog small-dog "
+        " medium-dog medium-dog  medium-dog  "
+        " large-dog large-dog  large-dog  ";
 }
 
 .dog-header{
@@ -18,12 +18,14 @@
 
 .dog-header > h1{
     text-align: center;
+    text-decoration: underline;
 }
 
 .dog-header > p{
     text-align: center;
     width: auto;
     margin: 30px;
+    font-size: 1.25em;
 
 }
 
@@ -34,14 +36,17 @@
 .small-dog{
     padding-top: 15px;
     grid-area: small-dog;
+    
 }
 
 .medium-dog{
     grid-area: medium-dog;
+    border-top: solid black;
 }
 
 .large-dog{
     grid-area: large-dog;
+    border-top: solid black;
 }
 
 @media (min-width: 1200px){
@@ -53,5 +58,17 @@
             ". small-dog medium-dog large-dog ."
             ". small-dog medium-dog  large-dog  ."
             ". small-dog medium-dog  large-dog  .";
+    }
+    
+    .medium-dog{
+        border-top: none;
+        border-left: solid black;
+        border-right: solid black;
+
+    }
+    
+    .large-dog{
+        border-top: none;
+        
     }
 }

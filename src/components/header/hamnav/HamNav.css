@@ -8,12 +8,15 @@
     flex-direction: column;
 }
 
-.nav-choices > li:hover{
+.nav-choices > a:hover{
     color: grey;
 }
 
-.nav-choices > li{
-    margin: 0 auto;
+.nav-choices > a{
+    margin: 10px auto ;
     font-size: 1.5em;
     list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }

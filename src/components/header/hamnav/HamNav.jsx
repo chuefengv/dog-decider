@@ -5,9 +5,9 @@ function HamNav(){
     return(
         <div className='hamnav-wrapper'>
             <ul className='nav-choices'>
-                <li>Home</li>
-                <li>Sizes</li>
-                <li>Github</li>
+                <a href='/'>Home</a>
+                <a href='#dogsize'>Sizes</a>
+                <a href='https://github.com/chuefengv/dog-decider'>Github</a>
             </ul>
         </div>
     )

@@ -1,15 +1,16 @@
 
-.go-up > a{
-    position: absolute;
-    bottom: 3%;
-    right: 3%;
-    font-size: 2.25em;
-    color: black;
-
+.dog-search-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2e519e;
+    color: white;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3);
 }
 
-.go-up > a:hover{
-    color: grey;
+.dog-search-header-title > h1{
+    font-size: 3em;
+    margin: 10px 0 10px 0;
 }
 
 .dog-results{
@@ -73,4 +74,17 @@
     display: flex;
     justify-content: flex-end;
     
+}
+
+.go-up > a{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    font-size: 2.25em;
+    color: black;
+
+}
+
+.go-up > a:hover{
+    color: grey;
 }

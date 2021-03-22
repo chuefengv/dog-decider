@@ -20,12 +20,12 @@ function DogSearch(){
 
     return(
         <div className='dog-search-wrapper'>
-            <div className='go-up'>
-                <a href='#header'>
-                    <FontAwesomeIcon icon={faAngleUp}/>
-                </a>
+            <div className='dog-search-header'>
+                <div className='dog-search-header-title'>
+                    <h1>Dog Breeds</h1>
+                </div>
+
             </div>
-            
         
             <div className='dog-results'>
                 {modalIsOpen && <ModalWindow modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/>}
@@ -44,7 +44,7 @@ function DogSearch(){
                                 </div>
                                 <div className='dog-cards-button'>
                                     <Button variant="contained" color="primary" disableElevation disableRipple onClick={()=>setModalIsOpen(!modalIsOpen)}>
-                                            Read More
+                                            Learn More
                                     </Button>
                                 </div>
                             </div>
@@ -53,6 +53,11 @@ function DogSearch(){
                 })}
             </div>
 
+            <div className='go-up'>
+                <a href='#header'>
+                    <FontAwesomeIcon icon={faAngleUp}/>
+                </a>
+            </div>
 
         </div>
     )

@@ -35,8 +35,9 @@ function DogSearch(){
                         <div className='dog-cards-picture'>
                             <img src={dog.pic}></img>
                         </div>
-                        <ClampLines text={dog.description} lines={4} className='dog-cards-desc'/>
-                        
+                        <div className='dog-cards-desc-outter'>
+                            <ClampLines text={dog.description} lines={4} className='dog-cards-desc-inner'/>
+                        </div>
                     </div>
                     
                     )

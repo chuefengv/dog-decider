@@ -14,7 +14,7 @@ app.use(express.json());
 //api route to GET city query from states database
 app.get('/dogs', async(req, res)=>{
     try{
-        const getCity = await pool.query("SELECT * FROM dogs WHERE size='small'");
+        const getCity = await pool.query("SELECT * FROM dogs WHERE size='small' ORDER BY breed");
         res.json(getCity.rows)
     }catch(err){
         console.log(err.message)

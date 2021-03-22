@@ -17,7 +17,12 @@
     background-color: #2e519e;
     color: whitesmoke;
     border: solid rgb(219, 219, 219);
+    transition: all 125ms ease-in-out;
+    border-radius: 5%;
+}
 
+.dog-cards:hover{
+    transform: scale(1.1);
 }
 
 .dog-cards-picture > img{
@@ -25,20 +30,24 @@
     max-height: 100%;
 }
 
-.dog-cards-picture{
-    padding: 10px;
-}
+
 
 .dog-cards-breed{
     text-align: center;
-    margin: 5px;
+    margin: 15px;
     font-size: 1.25em;
     font-weight: bold;
 }
 
 
-.dog-cards-desc{
-    margin: 10px 20px 10px 20px
+.dog-cards-desc-inner{
+    margin: 10px 20px 30px 20px;
+    color: whitesmoke;
+    
+}
+
+.dog-cards-desc-outter{
+    margin: 0 10px 0 10px;
 }
 
 .clamp-lines__button {

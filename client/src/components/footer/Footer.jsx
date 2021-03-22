@@ -9,7 +9,7 @@ function Footer(){
     return(
         <div className='footer-wrapper'>
             <div className='mission-state'>
-                <p>Founded in 2021, the DDD is the recognized and trusted expert in breed,
+                <p>Founded in 2021, the DDC is the recognized and trusted expert in breed,
                      health, and training information for dogs. DDD actively advocates for 
                      responsible dog ownership.</p>
             </div>
@@ -29,7 +29,7 @@ function Footer(){
 
             </div>
             <div className='copyright'>
-                <p>© Dog Data Decider, Inc. 2021. All rights reserved</p>
+                <p>© Dog Data Cards, Inc. 2021. All rights reserved</p>
                 {/* <p>By Chuefeng Vang</p> */}
             </div>
         </div>

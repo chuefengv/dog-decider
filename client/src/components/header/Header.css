@@ -7,11 +7,11 @@
 .logo{
     align-self: center;
     justify-self: center;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .hamburger-menu{
-    margin: 10px;
+    margin: 10px 20px 10px 10px;
     font-size: 3em;
     justify-self: flex-end;
  }

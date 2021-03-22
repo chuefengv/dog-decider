@@ -3,6 +3,8 @@ import './DogSearch.css';
 import Axios from 'axios';
 import Button from '@material-ui/core/Button'
 import ModalWindow from './modal/Modal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 function DogSearch(){
 
@@ -16,9 +18,15 @@ function DogSearch(){
         })
     }, [])
 
-
     return(
         <div className='dog-search-wrapper'>
+            <div className='go-up'>
+                <a href='#header'>
+                    <FontAwesomeIcon icon={faAngleUp}/>
+                </a>
+            </div>
+            
+        
             <div className='dog-results'>
                 {modalIsOpen && <ModalWindow modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/>}
                 {dogList.map((dog)=>{

@@ -15,10 +15,12 @@ function Header(){
         <div className='header-wrapper'>
             <div className='header-nav'>
                 <div className='logo'>
-                    <img src={logo} alt=""></img>
+                    <a href='/'>
+                        <img src={logo} alt=""></img>
+                    </a>
                 </div>
                 <div className='title'>
-                    <h2>Dog Data Decider</h2>
+                    <h2>Dog Data Cards</h2>
                 </div>
                 <div className='reg-nav'>
                     <RegNav />

@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <div className="wrapper">
-        <div className='header'>
+        <div className='header' id='header'>
           <Header />
         </div>
 
@@ -14,7 +14,7 @@ function App() {
           <div className='dogsize' id='dogsize'>
             <Route path='/' exact component={DogSize}></Route>
           </div>
-          <Route path='/show-dogs' exact component={DogSearch}></Route>
+          <Route path='/show-dogs' component={DogSearch}></Route>
 
         <div className='footer'>
           <Footer />

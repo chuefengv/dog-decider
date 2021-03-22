@@ -48,21 +48,19 @@
 }
 
 
-.dog-cards-desc-inner{
-    margin: 10px 20px 30px 20px;
+.dog-cards-desc{
+    margin: 0 10px 0 10px;
     color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.dog-cards-button{
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
     
 }
-
-.dog-cards-desc-outter{
-    margin: 0 10px 0 10px;
-}
-
-.clamp-lines__button {
-    background: none;
-    border: 0;
-    color: black;
-    cursor: pointer;
-    padding: 0;
-    font-weight: bold;
-  }

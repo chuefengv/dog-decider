@@ -1,20 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import './DogSearch.css';
 import Axios from 'axios';
-import ClampLines from 'react-clamp-lines';
+import Button from '@material-ui/core/Button'
+import ModalWindow from './modal/Modal'
 
 function DogSearch(){
 
     const [dogList, setDogList] = useState([]);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
-    // function getinfo(){
-    //     Axios.get('http://localhost:5000/dogs')
-    //     .then(res=>{
-    //         setDogList(res);
-    //         console.log(dogList.data);
-    //     })
-    // }
-    
     useEffect(()=>{
         Axios.get('http://localhost:5000/dogs')
         .then(res=>{
@@ -22,13 +16,14 @@ function DogSearch(){
         })
     }, [])
 
+
     return(
         <div className='dog-search-wrapper'>
-
             <div className='dog-results'>
+                {modalIsOpen && <ModalWindow modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/>}
                 {dogList.map((dog)=>{
                     return (
-                        <div key={dog.id} className='dog-cards'>
+                        <div key={dog.id} className='dog-cards' >
                             <div className='dog-cards-breed'>
                                 {dog.breed}
                             </div>
@@ -36,8 +31,13 @@ function DogSearch(){
                                 <div className='dog-cards-picture'>
                                     <img src={dog.pic}></img>
                                 </div>
-                                <div className='dog-cards-desc-outter'>
-                                    <ClampLines text={dog.description} lines={4} className='dog-cards-desc-inner'/>
+                                <div className='dog-cards-desc'>
+                                    {dog.description}
+                                </div>
+                                <div className='dog-cards-button'>
+                                    <Button variant="contained" color="primary" disableElevation disableRipple onClick={()=>setModalIsOpen(!modalIsOpen)}>
+                                            Read More
+                                    </Button>
                                 </div>
                             </div>
                         </div>

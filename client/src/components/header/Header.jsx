@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Header.css';
 import logo from '../../assets/paw.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 import HamNav from './hamnav/HamNav';
 import RegNav from './regnav/RegNav';
-import { useState } from 'react';
+import Collapse from '@material-ui/core/Collapse';
+
 
 
 function Header(){
@@ -37,7 +38,9 @@ function Header(){
                     />}
             </div>
             <div className='ham-nav'>
-                {showMenu && <HamNav/>}
+                <Collapse in={showMenu}>
+                    <HamNav />
+                </Collapse>
             </div>
         </div>
     );

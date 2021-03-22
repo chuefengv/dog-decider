@@ -1,10 +1,10 @@
 import React from 'react';
 import './Modal.css';
 
-function ModalWindow({modalIsOpen, setModalIsOpen}){
+function ModalWindow({modalBreed}){
     return(
         <div className='modal-wrapper'>
-            <p>hello</p>
+            <p>{modalBreed}</p>
         </div>
     )
 };

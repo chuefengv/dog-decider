@@ -7,10 +7,19 @@ import Modal from '@material-ui/core/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
+
+
+
 function DogSearch(){
 
     const [dogList, setDogList] = useState([]);
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalBreed, setModalBreed] = useState("");
+
+    function createModal(dog){
+        setModalBreed(dog.breed);
+        setModalIsOpen(true);
+    }
 
     useEffect(()=>{
         Axios.get('http://localhost:5000/dogs')
@@ -25,18 +34,9 @@ function DogSearch(){
                 <div className='dog-search-header-title'>
                     <h1>Dog Breeds</h1>
                 </div>
-
             </div>
         
             <div className='dog-results'>
-                <Modal
-                    open={modalIsOpen}
-                    onClose={()=>setModalIsOpen(!modalIsOpen)}
-                    aria-labelledby="simple-modal-title"
-                    aria-describedby="simple-modal-description"
-                >
-                    <ModalWindow />
-                </Modal>
                 {dogList.map((dog)=>{
                     return (
                         <div key={dog.id} className='dog-cards' >
@@ -45,13 +45,18 @@ function DogSearch(){
                             </div>
                             <div className='dog-cards-inner'>
                                 <div className='dog-cards-picture'>
-                                    <img src={dog.pic}></img>
+                                    <img src={dog.pic} alt=''></img>
                                 </div>
                                 <div className='dog-cards-desc'>
                                     {dog.description}
                                 </div>
                                 <div className='dog-cards-button'>
-                                    <Button variant="contained" color="primary" disableElevation disableRipple onClick={()=>setModalIsOpen(!modalIsOpen)}>
+                                    <Button 
+                                        variant="contained" 
+                                        color="primary" 
+                                        disableElevation 
+                                        disableRipple 
+                                        onClick={()=> createModal(dog)}>
                                             Learn More
                                     </Button>
                                 </div>
@@ -60,6 +65,17 @@ function DogSearch(){
                     )
                 })}
             </div>
+
+            <Modal
+                open={modalIsOpen}
+                onClose={()=>setModalIsOpen(false)}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+            >
+                <ModalWindow 
+                modalBreed={modalBreed}
+                />
+            </Modal>
 
             <div className='go-up'>
                 <a href='#header'>

@@ -14,10 +14,10 @@ function DogSearch(){
 
     const [dogList, setDogList] = useState([]);
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [modalBreed, setModalBreed] = useState("");
+    const [modalDog, setModalDog] = useState("");
 
     function createModal(dog){
-        setModalBreed(dog.breed);
+        setModalDog(dog);
         setModalIsOpen(true);
     }
 
@@ -73,7 +73,7 @@ function DogSearch(){
                 aria-describedby="simple-modal-description"
             >
                 <ModalWindow 
-                modalBreed={modalBreed}
+                modalDog={modalDog}
                 />
             </Modal>
 

@@ -1,3 +1,74 @@
 .modal-wrapper{
+    width: 450px;
+    height: 700px;
+    background-color: #2e519e;
+    color: whitesmoke;
+    border: solid rgb(219, 219, 219);
+    border-radius: 5%;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+}
 
+.modal-header{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.breed{
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+.size{
+    grid-column: 4/6;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.modal-body{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    color: black;
+    background-color: white;
+}
+
+.pic{
+    grid-column: 1/5;
+    grid-row-start: 1;
+}
+
+.pic > img{
+    width: 100%;
+}
+
+.life{
+    grid-column: 5/7;
+}
+
+.desc{
+    grid-column: 1/7;
+    grid-row-start: 2;
+}
+
+.height{
+    grid-column: 1/4;
+    grid-row-start: 3;
+
+}
+
+.weight{
+    grid-column: 4/7;
+    grid-row-start: 3;
+
+}
+
+.bio{
+    grid-column: 1/7;
+    grid-row-start: 4;
 }

@@ -28,18 +28,19 @@ function DogSearch(){
             <div className='dog-results'>
                 {dogList.map((dog)=>{
                     return (
-                    <div key={dog.id} className='dog-cards'>
-                        <div className='dog-cards-breed'>
-                            {dog.breed}
+                        <div key={dog.id} className='dog-cards'>
+                            <div className='dog-cards-breed'>
+                                {dog.breed}
+                            </div>
+                            <div className='dog-cards-inner'>
+                                <div className='dog-cards-picture'>
+                                    <img src={dog.pic}></img>
+                                </div>
+                                <div className='dog-cards-desc-outter'>
+                                    <ClampLines text={dog.description} lines={4} className='dog-cards-desc-inner'/>
+                                </div>
+                            </div>
                         </div>
-                        <div className='dog-cards-picture'>
-                            <img src={dog.pic}></img>
-                        </div>
-                        <div className='dog-cards-desc-outter'>
-                            <ClampLines text={dog.description} lines={4} className='dog-cards-desc-inner'/>
-                        </div>
-                    </div>
-                    
                     )
                 })}
             </div>

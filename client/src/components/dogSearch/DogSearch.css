@@ -28,8 +28,16 @@
 .dog-cards-picture > img{
     max-width: 100%;
     max-height: 100%;
+    border: solid  black;
+    border-radius: 5%;
 }
 
+.dog-cards-inner{
+    padding: 10px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 5%;
+}
 
 
 .dog-cards-breed{
@@ -42,7 +50,7 @@
 
 .dog-cards-desc-inner{
     margin: 10px 20px 30px 20px;
-    color: whitesmoke;
+    color: black;
     
 }
 
@@ -53,7 +61,7 @@
 .clamp-lines__button {
     background: none;
     border: 0;
-    color: white;
+    color: black;
     cursor: pointer;
     padding: 0;
     font-weight: bold;

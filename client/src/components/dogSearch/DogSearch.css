@@ -1,11 +1,11 @@
 
-
 .go-up > a{
     position: absolute;
     bottom: 3%;
     right: 3%;
     font-size: 2.25em;
     color: black;
+
 }
 
 .go-up > a:hover{
@@ -21,9 +21,7 @@
 }
 
 .dog-cards{
-    margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 30px 30px 50px 30px;
     width: 350px;
     min-height: 450px;
     max-height: auto;
@@ -36,7 +34,7 @@
 }
 
 .dog-cards:hover{
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .dog-cards-picture > img{
@@ -63,13 +61,11 @@
 
 
 .dog-cards-desc{
-    margin: 0 10px 0 10px;
+    margin: 10px 10px 0 10px;
     color: black;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 5; /* number of lines to show */
-    -webkit-box-orient: vertical;
+    overflow: auto;
+    height: 180px;
+
 }
 
 .dog-cards-button{

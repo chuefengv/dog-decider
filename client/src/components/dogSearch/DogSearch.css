@@ -31,25 +31,25 @@
     color: whitesmoke;
     border: solid rgb(219, 219, 219);
     transition: all 125ms ease-in-out;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 .dog-cards:hover{
-    transform: scale(1.15);
+    transform: scale(1.07);
 }
 
 .dog-cards-picture > img{
     max-width: 100%;
     max-height: 100%;
     border: solid  black;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 .dog-cards-inner{
     padding: 10px;
     margin: 15px;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 

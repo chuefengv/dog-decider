@@ -3,16 +3,27 @@ import DogSearch from '../DogSearch';
 import './Modal.css';
 
 function ModalWindow({modalDog}){
+
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
     return(
         <div className='modal-wrapper'>
-
+            
             <div className='modal-header'>
                 <div className='breed'>
                     {modalDog.breed}
                 </div>
-                <div className='size'>
-                    {modalDog.size}
-                </div>
+                {modalDog.size==='small' && <div className='size-small'>
+                    {capitalizeFirstLetter(modalDog.size)}                    
+                </div>}
+                {modalDog.size==='medium' && <div className='size-medium'>
+                    {capitalizeFirstLetter(modalDog.size)}                    
+                </div>}
+                {modalDog.size==='large' && <div className='size-large'>
+                    {capitalizeFirstLetter(modalDog.size)}                    
+                </div>}
             </div>
 
             <div className='modal-body'>
@@ -20,21 +31,20 @@ function ModalWindow({modalDog}){
                     <img src={modalDog.pic} alt=''></img>
                 </div>
                 <div className='life'>
-                    {modalDog.life}
-                </div>
-                <div className='desc'>
-                    {modalDog.description}
+                    <p>Life Expectancy: {modalDog.life}</p>
                 </div>
                 <div className='weight'>
-                    {modalDog.weight}
+                    <p>Average Weight: {modalDog.weight}</p>                
                 </div>
                 <div className='height'>
-                    {modalDog.height}
+                    <p>Average Height: {modalDog.height}</p>                   
                 </div>
+                    <h4>Bio</h4>
                 <div className='bio'>
                     {modalDog.bio}
                 </div>
             </div>
+            
         </div>
     )
 };

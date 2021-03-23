@@ -31,20 +31,19 @@ function ModalWindow({modalDog}){
                     <img src={modalDog.pic} alt=''></img>
                 </div>
                 <div className='life'>
-                    <p>Life Expectancy: {modalDog.life}</p>
+                    <h4>Life Expectancy:</h4> <p>{modalDog.life}</p>
                 </div>
-                <div className='weight'>
-                    <p>Average Weight: {modalDog.weight}</p>                
-                </div>
-                <div className='height'>
-                    <p>Average Height: {modalDog.height}</p>                   
-                </div>
-                    <h4>Bio</h4>
                 <div className='bio'>
                     {modalDog.bio}
                 </div>
+                <div className='weight'>
+                <h4>Average Weight:</h4> <p>{modalDog.weight}</p>               
+                </div>
+                <div className='height'>
+                <h4>Average Height:</h4> <p>{modalDog.height}</p>                  
+                </div>
             </div>
-            
+
         </div>
     )
 };

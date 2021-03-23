@@ -22,6 +22,7 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
     height: 40px;
+
 }
 
 .breed{
@@ -31,6 +32,7 @@
     padding-top: 5px;
     font-size: 1.25em;
     font-weight: bold;
+    overflow: scroll;
 }
 
 .size-small{
@@ -81,12 +83,6 @@
     border-top-left-radius: 5px;
 }
 
-.modal-body > h4{
-    grid-column: 1/7;
-    grid-row-start: 5;
-    margin: 0;
-    justify-content: center;
-}
 
 .pic{
     grid-column: 1/7;
@@ -96,7 +92,7 @@
 
 .pic > img{
     width: 100%;
-    border: solid  black;
+    border: solid rgba(0, 0, 0);
     border-radius: 5px;
 
 }
@@ -104,37 +100,43 @@
 .life{
     grid-column: 1/7;
     grid-row-start: 2;
+    text-align: center;
+    margin: 5px 0 5px 0;
 }
 
-.life > p{
-    margin: 0 15px 10px 15px;
-}
-
-.height{
-    grid-column: 1/7;
-    grid-row-start: 3;
-}
-
-.height > p{
-    margin: 0 15px 10px 15px;
-}
-
-.weight{
-    grid-column: 1/7;
-    grid-row-start: 4;
-}
-
-.weight > p{
-    margin: 0 15px 10px 15px;
+.life > p, h4{
+    display: inline;
 }
 
 .bio{
     grid-column: 1/7;
-    grid-row-start: 6;
-    margin: 0 10px 10px 10px;
+    grid-row-start: 3;
+    margin: 0 10px 10px;
     padding: 10px;
     max-height: 175px;
     overflow: scroll;
     background-color: rgb(231, 231, 231);
-    
+    border: rgba(0, 0, 0) solid ;
 }
+
+.height{
+    grid-column: 1/7;
+    grid-row-start: 4;
+    margin: 0 15px 0 15px;
+}
+
+.height > p, h4{
+    display: inline;
+}
+
+.weight{
+    grid-column: 1/7;
+    grid-row-start: 5;
+    margin: 0 15px 0 15px;
+}
+
+.weight > p, h4{
+    display: inline;
+}
+
+

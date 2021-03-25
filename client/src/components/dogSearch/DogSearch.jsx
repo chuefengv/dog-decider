@@ -11,7 +11,7 @@ import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function DogSearch(){
+function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setCheckedC}){
 
     const [dogList, setDogList] = useState([]);
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -23,11 +23,11 @@ function DogSearch(){
     }
 
     useEffect(()=>{
-        Axios.get('http://localhost:5000/dogs')
+        Axios.get('http://localhost:5000/dogs', {params: {small:(checkedA ? "" : "small"), medium:(checkedB ? "" : "medium"), large:(checkedC ? "" : "large")}})
         .then(res=>{
             setDogList(res.data);
         })
-    }, [])
+    }, [checkedA, checkedB, checkedC])
 
     return(
         <div className='dog-search-wrapper'>
@@ -37,7 +37,8 @@ function DogSearch(){
                 </div>
             </div>
             <div className='dog-search-order'>
-                <Ordering />
+                <Ordering checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} 
+                 setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC}/>
             </div>
         
             <div className='dog-results'>

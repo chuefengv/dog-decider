@@ -1,5 +1,4 @@
 import React from 'react';
-import DogSearch from '../DogSearch';
 import './Modal.css';
 
 function ModalWindow({modalDog}){

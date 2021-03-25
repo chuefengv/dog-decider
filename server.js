@@ -13,8 +13,11 @@ app.use(express.json());
 
 //api route to GET city query from states database
 app.get('/dogs', async(req, res)=>{
+    const small = req.query.small;
+    const medium = req.query.medium;
+    const large = req.query.large;
     try{
-        const getCity = await pool.query("SELECT * FROM dogs ORDER BY breed");
+        const getCity = await pool.query("SELECT * FROM dogs WHERE size NOT IN (($1), ($2), ($3)) ORDER BY breed",[small, medium, large]);
         res.json(getCity.rows)
     }catch(err){
         console.log(err.message)

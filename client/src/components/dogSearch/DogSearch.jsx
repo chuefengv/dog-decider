@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import './DogSearch.css';
 import Axios from 'axios';
-import Button from '@material-ui/core/Button'
-import ModalWindow from './modal/Modal'
+import Button from '@material-ui/core/Button';
+import ModalWindow from './modal/Modal';
+import Ordering from './ordering/Ordering';
 import Modal from '@material-ui/core/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
@@ -34,6 +35,9 @@ function DogSearch(){
                 <div className='dog-search-header-title'>
                     <h1>Dog Breeds</h1>
                 </div>
+            </div>
+            <div className='dog-search-order'>
+                <Ordering />
             </div>
         
             <div className='dog-results'>

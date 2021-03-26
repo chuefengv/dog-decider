@@ -17,16 +17,21 @@ body, html{
         "header"
         "hero"
         "dogsize"
-        "footer"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+
+    min-height: 100vh;
 }
 
 .header {
     grid-area: header;
+    grid-row: 1/2;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.8);
 }
 
 .hero{
     grid-area: hero;
+    grid-row: 2/3;
     height: 90vh;
     background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('assets/dog-hero.jpg');
     background-position: center;
@@ -37,9 +42,11 @@ body, html{
 
 .dogsize{
     grid-area: dogsize;
+    grid-row: 3/4;
 
 }
 
 .footer{
     grid-area: footer;
+    grid-row: 4/5;
 }

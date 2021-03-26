@@ -12,23 +12,29 @@ function App() {
   return (
     <Router>
       <div className="wrapper">
+
         <div className='header' id='header'>
           <Header setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC}/>
         </div>
 
-          <Route path='/' exact component={Hero}></Route>
-          <div className='dogsize' id='dogsize'>
+        <Route path='/' exact component={Hero}></Route>
+
+        <div className='dogsize' id='dogsize'>
           <Route path='/' exact render={() => (
             <DogSize checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC} />
           )}></Route>
-          </div>
+        </div>
+
+        <div className='dogsize'>
           <Route path='/show-dogs' render={() => (
             <DogSearch checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC} />
           )}></Route>
+        </div>
 
         <div className='footer'>
           <Footer />
         </div>
+
       </div>
     </Router>
   );

@@ -85,7 +85,10 @@
 
 }
 
-
 .go-up > a:hover{
     color: grey;
+}
+
+.no-choice{
+    text-align: center;
 }

@@ -12,7 +12,7 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 //api route to GET city query from states database
-app.get('/dogs', async(req, res)=>{
+app.get('/api/data', async(req, res)=>{
     const small = req.query.small;
     const medium = req.query.medium;
     const large = req.query.large;

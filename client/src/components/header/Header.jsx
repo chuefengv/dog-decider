@@ -6,25 +6,26 @@ import { faBars, faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 import HamNav from './hamnav/HamNav';
 import RegNav from './regnav/RegNav';
 import Collapse from '@material-ui/core/Collapse';
+import { Link } from 'react-router-dom';
 
 
 
-function Header(){
+function Header({setCheckedA, setCheckedB, setCheckedC}){
     const [showMenu, setShowMenu] = useState(false);
 
     return(
         <div className='header-wrapper'>
             <div className='header-nav'>
                 <div className='logo'>
-                    <a href='/'>
+                    <Link to='/'>
                         <img src={logo} alt=""></img>
-                    </a>
+                    </Link>
                 </div>
                 <div className='title'>
                     <h2>Dog Data Cards</h2>
                 </div>
                 <div className='reg-nav'>
-                    <RegNav />
+                    <RegNav setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC}/>
                 </div>
                     {!showMenu && <FontAwesomeIcon 
                         className='hamburger-menu'
@@ -39,7 +40,7 @@ function Header(){
             </div>
             <div className='ham-nav'>
                 <Collapse in={showMenu}>
-                    <HamNav />
+                    <HamNav setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC}/>
                 </Collapse>
             </div>
         </div>

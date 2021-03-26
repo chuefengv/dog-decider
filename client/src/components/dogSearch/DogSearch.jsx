@@ -9,8 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 
-
-
 function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setCheckedC}){
 
     const [dogList, setDogList] = useState([]);
@@ -40,7 +38,7 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
                 <Ordering checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} 
                  setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC}/>
             </div>
-        
+                
             <div className='dog-results'>
                 {dogList.map((dog)=>{
                     return (

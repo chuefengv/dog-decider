@@ -13,12 +13,14 @@ function App() {
     <Router>
       <div className="wrapper">
         <div className='header' id='header'>
-          <Header />
+          <Header setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC}/>
         </div>
 
           <Route path='/' exact component={Hero}></Route>
           <div className='dogsize' id='dogsize'>
-            <Route path='/' exact component={DogSize}></Route>
+          <Route path='/' exact render={() => (
+            <DogSize checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC} />
+          )}></Route>
           </div>
           <Route path='/show-dogs' render={() => (
             <DogSearch checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC} />

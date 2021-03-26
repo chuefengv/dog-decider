@@ -67,7 +67,12 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
                         </div>
                     )
                 })}
+                <div className='no-choice'>
+                   {checkedA===false && checkedB===false && checkedC===false && <h1>Please choose a size.</h1>}
+                </div>         
             </div>
+
+            
 
             <Modal
                 open={modalIsOpen}

@@ -17,7 +17,7 @@ body, html{
         "header"
         "hero"
         "dogsize"
-        "footer"
+        "footer";
 }
 
 .header {
@@ -37,7 +37,6 @@ body, html{
 
 .dogsize{
     grid-area: dogsize;
-
 }
 
 .footer{

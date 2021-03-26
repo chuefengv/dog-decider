@@ -6,10 +6,10 @@ const pool = require('./db.js')
 app.use(cors()); 
 app.use(express.json());
 
-//if deployed in production mode, serve the front end
-// if(process.env.NODE_ENV === 'production'){
-//     app.use(express.static('client/build'))
-// }
+// if deployed in production mode, serve the front end
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static('client/build'))
+}
 
 //api route to GET city query from states database
 app.get('/dogs', async(req, res)=>{

@@ -66,7 +66,6 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
                             </div>
                         </div>
                     )
-<<<<<<< HEAD
                 })}  
             </div>      
 
@@ -74,25 +73,14 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
                    {checkedA===false && checkedB===false && checkedC===false && <h1>Please choose a size.</h1>}
             </div>  
             
-=======
-                })}
-                <div className='no-choice'>
-                   {checkedA===false && checkedB===false && checkedC===false && <h1>Please choose a size.</h1>}
-                </div>         
-            </div>
-
-            
-
->>>>>>> 5a74acbcab7a43ea8dfbd1cce6ac69826188412e
             <Modal
                 open={modalIsOpen}
                 onClose={()=>setModalIsOpen(false)}
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
             >
-                <ModalWindow 
-                modalDog={modalDog}
-                />
+                <ModalWindow modalDog={modalDog}/>
+                
             </Modal>
 
             <div className='go-up'>

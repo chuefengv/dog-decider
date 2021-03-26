@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.328369c4.chunk.css",
+    "main.js": "/static/js/main.25a104dc.chunk.js",
+    "main.js.map": "/static/js/main.25a104dc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ff7d737e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ff7d737e.js.map",
+    "static/js/2.b879aafe.chunk.js": "/static/js/2.b879aafe.chunk.js",
+    "static/js/2.b879aafe.chunk.js.map": "/static/js/2.b879aafe.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.328369c4.chunk.css.map": "/static/css/main.328369c4.chunk.css.map",
+    "static/js/2.b879aafe.chunk.js.LICENSE.txt": "/static/js/2.b879aafe.chunk.js.LICENSE.txt",
+    "static/media/background.533271a2.jpeg": "/static/media/background.533271a2.jpeg",
+    "static/media/background_2.9b1c5ac6.jpg": "/static/media/background_2.9b1c5ac6.jpg",
+    "static/media/background_3.5e59ac4a.jpeg": "/static/media/background_3.5e59ac4a.jpeg",
+    "static/media/App.css": "/static/media/dog-hero.e12190a0.jpg",
+    "static/media/l-dog.6b4c8538.png": "/static/media/l-dog.6b4c8538.png",
+    "static/media/m-dog.9a04200a.png": "/static/media/m-dog.9a04200a.png",
+    "static/media/s-dog.418fc72c.png": "/static/media/s-dog.418fc72c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff7d737e.js",
+    "static/js/2.b879aafe.chunk.js",
+    "static/css/main.328369c4.chunk.css",
+    "static/js/main.25a104dc.chunk.js"
+  ]
+}

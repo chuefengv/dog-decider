@@ -17,8 +17,8 @@ app.get('/api/data', async(req, res)=>{
     const medium = req.query.medium;
     const large = req.query.large;
     try{
-        const getCity = await pool.query("SELECT * FROM dogs WHERE size NOT IN (($1), ($2), ($3)) ORDER BY breed",[small, medium, large]);
-        res.json(getCity.rows)
+        const getDog = await pool.query("SELECT * FROM dogs WHERE size NOT IN (($1), ($2), ($3)) ORDER BY breed",[small, medium, large]);
+        res.json(getDog.rows)
     }catch(err){
         console.log(err.message)
     }

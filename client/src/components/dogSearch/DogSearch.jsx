@@ -21,7 +21,7 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
     }
 
     useEffect(()=>{
-        Axios.get('http://localhost:5000/api/data', {params: {small:(checkedA ? "" : "small"), medium:(checkedB ? "" : "medium"), large:(checkedC ? "" : "large")}})
+        Axios.get(`http://localhost:${process.env.PORT}/api/data`, {params: {small:(checkedA ? "" : "small"), medium:(checkedB ? "" : "medium"), large:(checkedC ? "" : "large")}})
         .then(res=>{
             setDogList(res.data);
         })

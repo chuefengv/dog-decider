@@ -26,7 +26,7 @@ function App() {
         </div>
 
         <div className='dogsize'>
-          <Route path='#/show-dogs' render={() => (
+          <Route path='/#/show-dogs' render={() => (
             <DogSearch checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC} />
           )}></Route>
         </div>

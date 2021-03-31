@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const pool = require('./db.js')
+const path = require('path')
 
 app.use(cors()); 
 app.use(express.json());
@@ -23,6 +24,10 @@ app.get('/api/data', async(req, res)=>{
         console.log(err.message)
     }
 })
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/client/build/index.html'));
+});
 
 app.listen(process.env.PORT || 5000, ()=>{
     console.log(`Process is running on port ${process.env.PORT || 5000} LETS GO!`)

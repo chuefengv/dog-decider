@@ -11,14 +11,6 @@ if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'))
 }
 
-app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname, '/client/public/index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
-
 //api route to GET city query from states database
 app.get('/api/data', async(req, res)=>{
     const small = req.query.small;

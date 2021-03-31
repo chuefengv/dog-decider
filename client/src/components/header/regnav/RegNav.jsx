@@ -13,7 +13,7 @@ function RegNav({setCheckedA, setCheckedB, setCheckedC}){
         <div>
             <ul className='nav-choices-2'>
                 <Link to='/'>Home</Link>
-                <Link to='/show-dogs' onClick={()=>showAll()}>Breeds</Link>
+                <Link to='#/show-dogs' onClick={()=>showAll()}>Breeds</Link>
                 <a href='https://github.com/chuefengv/dog-decider'>Github</a>
             </ul>
         </div>

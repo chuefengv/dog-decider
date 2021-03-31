@@ -15,7 +15,7 @@ function HamNav({setCheckedA, setCheckedB, setCheckedC}){
         <div className='hamnav-wrapper'>
             <ul className='nav-choices'>
                 <Link to='/'>Home</Link>
-                <Link to='/#/show-dogs' onClick={()=>showAll()}>Breeds</Link>
+                <Link to='/show-dogs' onClick={()=>showAll()}>Breeds</Link>
                 <a href='https://github.com/chuefengv/dog-decider'>Github</a>
             </ul>
         </div>

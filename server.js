@@ -12,6 +12,11 @@ if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'))
 }
 
+pool.on('error', (err, client) => {
+  console.error('Unexpected error on idle client', err)
+  process.exit(-1)
+})
+
 //api route to GET city query from states database
 app.get('/api/data', async(req, res)=>{
     const small = req.query.small;

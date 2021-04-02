@@ -20,8 +20,9 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
         setModalIsOpen(true);
     }
 
+    //everytime the user checks off a new size filter, update the page to show breeds accordingly
     useEffect(()=>{
-        Axios.get('http://localhost:5000/api/data', {params: {small:(checkedA ? "" : "small"), medium:(checkedB ? "" : "medium"), large:(checkedC ? "" : "large")}})
+        Axios.get('/api/data', {params: {small:(checkedA ? "" : "small"), medium:(checkedB ? "" : "medium"), large:(checkedC ? "" : "large")}})
         .then(res=>{
             setDogList(res.data);
         })
@@ -29,18 +30,22 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
 
     return(
         <div className='dog-search-wrapper'>
+
             <div className='dog-search-header'>
                 <div className='dog-search-header-title'>
                     <h1>Dog Breeds</h1>
                 </div>
             </div>
+
+            {/* filter option to show either small, medium or large breeds */}
             <div className='dog-search-order'>
                 <div className='dog-search-order-sizes'>
                     <Ordering checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} 
                     setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC} fontSize={18}/>
                 </div>
             </div>
-                
+            
+            {/* for every dog in the database, create a general info card with a 'learn more' option */}
             <div className='dog-results'>
                 {dogList.map((dog)=>{
                     return (
@@ -71,10 +76,12 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
                 })}  
             </div>      
 
+            {/* when all dog sizes are unchecked, ask the user to choose a size */}
             <div className='no-choice'>
                    {checkedA===false && checkedB===false && checkedC===false && <h1>Please choose a size.</h1>}
             </div>  
             
+            {/* when a dog info is clicked, modal window with more information about specific dog breed is shown */}
             <Modal
                 open={modalIsOpen}
                 onClose={()=>setModalIsOpen(false)}
@@ -82,9 +89,9 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
                 aria-describedby="simple-modal-description"
             >
                 <ModalWindow modalDog={modalDog}/>
-                
             </Modal>
 
+            {/* scrolls to the top of the page quickly */}
             <div className='go-up'>
                 <a href='#header'>
                     <FontAwesomeIcon icon={faAngleUp}/>

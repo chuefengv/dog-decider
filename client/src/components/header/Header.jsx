@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 
 
 function Header({setCheckedA, setCheckedB, setCheckedC}){
+    //display dropdown menu when hamburger icon is clicked, mobile screen only
     const [showMenu, setShowMenu] = useState(false);
 
     return(

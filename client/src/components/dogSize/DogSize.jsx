@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 
 function DogSize({setCheckedA, setCheckedB, setCheckedC}){
     
+    //selects the correct size filters depending on which size the user selects
     function setSmall(){
         setCheckedA(true);
         setCheckedB(false);

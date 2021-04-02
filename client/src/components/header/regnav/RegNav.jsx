@@ -3,6 +3,8 @@ import './RegNav.css'
 import { Link } from 'react-router-dom';
 
 function RegNav({setCheckedA, setCheckedB, setCheckedC}){
+    
+    //when user clicks link to show all breeds, check all sizes in the filter checkboxes before loading
     function showAll(){
         setCheckedA(true);
         setCheckedB(true);

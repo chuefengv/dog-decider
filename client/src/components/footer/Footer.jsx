@@ -14,9 +14,6 @@ function Footer(){
                      responsible dog ownership.</p>
             </div>
             <div className='social-links'>
-                {/* <a href='/'>Github</a>
-                <a href='/'>LinkedIn</a>
-                <a href='/'>Personal</a> */}
                 <a href='https://github.com/chuefengv/dog-decider'>
                     <img src={github} alt=''></img>
                 </a>
@@ -26,11 +23,9 @@ function Footer(){
                 <a href='/'>
                     <img src={home} alt=''></img>
                 </a>
-
             </div>
             <div className='copyright'>
                 <p>© Dog Data Cards, Inc. 2021. All rights reserved</p>
-                {/* <p>By Chuefeng Vang</p> */}
             </div>
         </div>
     );

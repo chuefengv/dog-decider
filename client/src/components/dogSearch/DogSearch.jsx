@@ -35,8 +35,10 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
                 </div>
             </div>
             <div className='dog-search-order'>
-                <Ordering checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} 
-                 setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC}/>
+                <div className='dog-search-order-sizes'>
+                    <Ordering checkedA={checkedA} checkedB={checkedB} checkedC={checkedC} 
+                    setCheckedA={setCheckedA} setCheckedB={setCheckedB} setCheckedC={setCheckedC} fontSize={18}/>
+                </div>
             </div>
                 
             <div className='dog-results'>

@@ -13,6 +13,11 @@
     margin: 10px 0 10px 0;
 }
 
+.dog-search-order{
+    display: flex;
+    justify-content: center;
+}   
+
 .dog-results{
     display: flex;
     flex-direction: row;

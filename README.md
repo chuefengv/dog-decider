@@ -1,7 +1,7 @@
 # cv-ddd
 Informational dog website to help user narrow down what type of dog breed they may want to adopt. Built with Postgres, Express, React and Node. 
 
-*For best experience, view through Chrome Desktop.*
+*For best experience, view through Chrome desktop.*
 
 * Data scraped from akc.org
 * Icons from flaticon.com

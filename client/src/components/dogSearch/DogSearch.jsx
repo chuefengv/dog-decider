@@ -11,10 +11,14 @@ import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setCheckedC}){
 
+    //array to store list of every dog breed from database
     const [dogList, setDogList] = useState([]);
+    //flag for opening modal window about specific dog breed
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    //pass props about specific breed to modal window
     const [modalDog, setModalDog] = useState("");
 
+    //modal window that displays more indepth info on the dog breed
     function createModal(dog){
         setModalDog(dog);
         setModalIsOpen(true);
@@ -22,6 +26,7 @@ function DogSearch({checkedA, checkedB, checkedC, setCheckedA, setCheckedB, setC
 
     //everytime the user checks off a new size filter, update the page to show breeds accordingly
     useEffect(()=>{
+        //pg query to list dog breeds according to size
         Axios.get('/api/data', {params: {small:(checkedA ? "" : "small"), medium:(checkedB ? "" : "medium"), large:(checkedC ? "" : "large")}})
         .then(res=>{
             setDogList(res.data);

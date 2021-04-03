@@ -3,6 +3,7 @@ import './Modal.css';
 
 function ModalWindow({modalDog}){
 
+    //database schema has size listed in lowercases, capitalizing to make display look cleaner
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
